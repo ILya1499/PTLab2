@@ -8,3 +8,5 @@ class PurchaseCreateTestCase(TestCase):
     def test_webpage_accessibility(self):
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
+        responsepromo = self.client.get('/promocode/')
+        self.assertEqual(responsepromo.status_code, 200)
