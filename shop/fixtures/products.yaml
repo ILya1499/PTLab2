@@ -1,15 +1,52 @@
 - model: shop.product
   pk: 1
   fields:
-    name: Стол
+    name: Мышь
     price: 2000
 - model: shop.product
   pk: 2
   fields:
-    name: Стул
+    name: Коврик
     price: 1000
 - model: shop.product
   pk: 3
   fields:
-    name: Табурет
+    name: Кресло
     price: 500
+- model: shop.product
+  pk: 4
+  fields:
+    name: Монитор
+    price: 5000
+    promid: 1
+- model: shop.product
+  pk: 5
+  fields:
+    name: Системный блок
+    price: 10000
+    promid: 1
+- model: shop.product
+  pk: 6
+  fields:
+    name: Колонки
+    price: 500
+    promid: 2
+- model: shop.product
+  pk: 7
+  fields:
+    name: Лампа
+    price: 1000
+    promid: 2
+- model: shop.promocode
+  pk: 1
+  fields:
+    number: Жека
+    date_end: 2025-03-29
+- model: shop.promocode
+  pk: 2
+  fields:
+    number: Илюха
+    date_end: 2025-01-30
+
+
+

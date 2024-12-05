@@ -14,13 +14,16 @@
                 <td></td>
             </tr>
             {% for p in products %}
-                <tr>
-                    <td><p>{{ p.name }}</p></td>
-                    <td><p>{{ p.price }}</p></td>
-                    <td><p><a href="/buy/{{ p.id }}">Купить</a></p></td>
-                </tr>
+                {% if p.promid == null or p.promid.pk == request.session.promo %}
+                    <tr>
+                        <td><p>{{ p.name }}</p></td>
+                        <td><p>{{ p.price }}</p></td>
+                        <td><p><a href="/buy/{{ p.id }}">Купить</a></p></td>
+                    </tr>
+                {% endif %}
             {% endfor %}
         </table>
+        <a href="/promocode/">Ввести промокод</a>
     </div>
 </body>
 </html>
